@@ -9,4 +9,11 @@ Your function must always return the entire object.
 - If value is an empty string, delete the given prop property from the album.
 - Note: A copy of the collection object is used for the tests.
 
+Problem Explanation
+For the given id parameter, which is associated to the object:
+- If the value parameter isn’t an empty string, update (or set) the value parameter for the prop parameter.
+- If the prop parameter is equal to "tracks" and the value isn’t an empty string, push the value onto the end of the tracks array.
+- If value is an empty string, delete that prop from the object.
+- Finally, return object.
+
 https://www.freecodecamp.org/

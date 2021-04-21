@@ -19,7 +19,16 @@ var collection = {
   };
   
   function updateRecords(object, id, prop, value) {
+    if(prop != 'tracks' && value != ''){
+      object[id][prop] = value;
+    }else if(prop == 'tracks' && !object[id].hasOwnProperty('tracks')){
+      object[id][prop] = [value];
+    }else if(value != ''){
+      object[id][prop].push(value);
+    }else{
+      delete object[id][prop];
+    }
     return object;
   }
   
-  console.log(updateRecords(collection, 5439, 'artist', 'ABBA'));
+ console.log(updateRecords(collection, 5439, 'tracks', 'ABBA'));
