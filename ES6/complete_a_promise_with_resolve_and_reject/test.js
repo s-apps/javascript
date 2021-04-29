@@ -10,7 +10,7 @@ const makeServerRequest = new Promise((resolve, reject) => {
   let responseFromServer;
     
   if(responseFromServer) {
-    resolve('resolve');
+    resolve('We got the data');
   } else {  
     reject('Data not received');
   }
