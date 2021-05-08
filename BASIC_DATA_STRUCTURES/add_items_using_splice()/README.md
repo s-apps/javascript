@@ -1,4 +1,4 @@
-# Add items using slice()
+# Add items using splice()
 
 Remember in the last challenge we mentioned that splice() can take up to three parameters? Well, you can use the third parameter, comprised of one or more element(s), to add to the array. This can be incredibly useful for quickly switching out an element, or a set of elements, for another.
 
