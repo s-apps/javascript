@@ -1,1 +1,0 @@
-# Destructuring arrays - objects - rest parameter
