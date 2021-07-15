@@ -1,0 +1,1 @@
+let yourArray = ['string', 2, true, 'string2', null];
